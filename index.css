@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: 'Mukta', sans-serif;
+    position: relative;
+}
+.div1.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+    transition: 0.1s;
+}
+div.div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+    
+}
+div.task{
+    font-size: 50px;
+    color: white;
+    margin-left: 236px;
+
+}
+#ad{
+    font-size: 33px;
+    cursor: pointer;
+    color: rgba(36, 134, 226, 0.938);
+}
+#A{
+    font-size: 33px;
+    margin-right: 240px;
+    cursor: pointer;
+}
+#no{
+    display: flex;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    left: 242px;
+    top: 73px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+
+.pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    width: 445px;
+    height: 226px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+div.new{
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: 28px;
+}
+
+.add-cancel{
+        margin-left: 120px;
+}
+div.list{
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 200px;
+    width: 430px;
+    background-color: white;
+    color: red;
+    margin: 30px 0px 0px 140px;
+}
+#inputField, #text1{
+    border: 2px solid red;
+    height: 40px;
+    width: 300px;
+    margin-left: 15%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add{
+    border: 2px solid red;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 9px;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+#popup.active{
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+#popdown.active
+{
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+.to-do{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 145px;
+    left: 150px;
+    box-sizing: border-box;
+}
+ #dlt{
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    cursor: pointer;
+} 
+.element{
+    width: 200px;
+    min-height: 300px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+#pargh{
+    font-size: 30px;
+    font-weight: 400;
+    color: red;
+}
+.mark{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#card2{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+#md{
+    background-color: #4287f5;
+    font-size: 13px;
+    padding: 4px;
+    width: 90px;
+    height: 24px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}
+
+#btnAdd{
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+hr
+{
+    border: 0.5px solid black;
+    margin: 0;
+    margin-top: -45px;
+    width: 200px;
+
+}
+button{
+    background: white;
+    border: 0px solid white;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width:350px) and (max-width:700px){
+    div.task{
+        font-size: 43px;
+        margin-left: 32px;
+    }
+    #A{
+        display: none;
+    }
+    #ad{
+        font-size: 25px;
+        margin-right: 30px;
+    }
+    #no{
+        position: absolute;
+        left: 70px;
+        font-size: 20px;
+    }
+    .pop{
+        display: flex;
+        justify-content: center;
+        
+    }
+    div.list{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        left: -260px;
+
+    }
+    div.new{
+        
+        margin-left: 80px;
+    }
+    #inputField, #text1{
+        width: 217px;
+    }
+    .add-cancel{
+
+        margin-left: 70px;
+    }
+    .add{
+        font-size: 15px;
+
+    }
+    #btn{
+        margin-right: 20px;
+    }
+    .element{
+        width: 280px;
+        min-height:10px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    hr, #btnAdd, .text-para{
+        display: none;
+    }
+    .container{
+        height: auto;
+        position: absolute;
+        left: 36px;
+        top: 70px;
+    }
+}
